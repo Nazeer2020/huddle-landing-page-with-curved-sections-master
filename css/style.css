@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.col {
+    width: 100%;
+    align-items: center;
+    flex: 1;   
+    align-self: center;
+}
+
+div {
+    margin: -3px 0;
+}
+
+
+
+/* =========== reuseble =========== */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+
+/* =========== headings =========== */
+
+header h1 {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    font-size: 170%;
+}
+
+
+.second-section .col h1 {
+    font-size: 400%;
+}
+
+
+/* =========== paraghraph =========== */
+
+header p {
+    padding: 0 10%;
+}
+
+section p,
+footer p {
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    font-size: 90%;
+}
+
+.Third-section .col p,
+.fifth-section .col p {
+    padding: 50px 0 70px 0 ;
+}
+
+.fourth-section .col p {
+    padding-top: 50px;
+}
+
+/* =========== Buttons =========== */
+
+ a {
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .smallBtn {
+    float: right;
+    margin: 7% 3.5% 0 auto;
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+    width: 100px;
+    height: 30px;
+    font-size: 80%;
+    transition: color border 1s;
+}
+
+.bigBtn {
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    height: 45px;
+    width: 240px;
+    margin: 80px auto 0 auto;
+    box-shadow: 0 2px 4px 2px rgb(202, 201, 201);
+    transition: background-color 1s;
+}
+
+
+footer li a {
+    color: #fff;
+    transition: color 1s;
+}
+
+footer a:hover {
+    color: hsl(207, 100%, 65%);
+   }
+   
+
+.btn:hover {
+    background-color: hsl(321, 100%, 78%);
+    color: #fff;
+}
+
+footer .btn:hover {
+    background-color: hsl(321, 100%, 78%);
+}
+.smallBtn:hover {
+    color: hsl(321, 100%, 78%);
+    border: 1px solid hsl(321, 100%, 78%);
+}
+
+
+/* =========== header =========== */
+
+
+header img {
+    width: 150px;
+    margin: 7% 0 0 3.5%;
+}
+
+header div {
+    text-align: center;
+}
+
+
+
+/* =========== sections =========== */
+
+section {
+    margin: 100px 0;
+    text-align: center;
+}
+
+section img {
+    display: block;
+}
+
+.first-section img {
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    width: 93%;
+}
+
+.second-section .col div {
+    width: 40%;
+    margin: 0 auto;
+    text-align: left;
+    
+}
+
+.massage {
+    padding: 70px 0 0 0;
+}
+
+.second-section .col img {
+    width: 50px;
+}
+
+.Third-section .col img,
+.fifth-section .col img {
+    padding: 70px 0;
+    margin: 0 3.5%;
+    width: 93%;
+}
+
+.fourth-section .col img {
+    padding-bottom: 70px;
+    margin: 0 3.5%;
+    width: 93%;
+}
+
+
+.grow-together {
+    background-color: hsl(207, 100%, 98%);
+}
+
+.des-curve {
+    display: none;
+}
+
+
+/* =========== Footer =========== */
+
+
+footer .row {
+    background-color: hsl(192, 100%, 9%);
+    margin: -3px 0;
+    text-align: left;
+}
+
+footer div {
+    vertical-align: top;
+    overflow:hidden;
+}
+
+footer img {
+    display: block;
+}
+
+#svg {
+    fill: #fff;
+    width: 50%;
+}
+
+footer input,
+footer h2,
+footer p,
+footer ul,
+footer svg {
+    margin-left: 3.5%;
+    color: #fff;
+}
+
+footer h2{
+    padding-top: 50px;
+}
+
+footer input {
+    width: 93%;
+    height: 40px;
+}
+
+footer svg {
+    margin-top: 100px;
+}
+
+footer p {
+    padding: 25px 0;
+}
+
+footer .add {
+    padding: 0 ;
+}
+
+footer ul {
+    padding: 25px 0;
+}
+
+footer li {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+
+
+footer .footer-bigbtn {
+    float: right;
+    margin-top: 2%;
+    margin-right: 3.5%;
+    margin-bottom: 3.5%;
+    margin-left: auto;
+    border-radius: 0;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    background-color: hsl(322, 100%, 66%);
+    transition: background-color 1s;
+}
+
+
+
+/* medai query */
+
+@media only screen and (max-width: 1700px) and (min-width: 550px)  {
+ header br {
+     display: none;
+ }
+
+ .row {
+     flex-direction: row;
+ }
+
+ .Ready-to-bulid {
+    flex-direction: column;
+ }
+ .mobile-curve {
+     display: none;
+ }
+ .des-curve {
+     display: block;
+ }
+
+ .des-curve h1,
+ .des-curve p {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.des-curve img {
+    margin-right: 10%;
+}
+
+ .fourth-section .col img,
+ .Third-section .col img,
+.fifth-section .col img {
+    max-height: 450px;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.fourth-section h1,
+.fourth-section p {
+    text-align: left;
+    margin-left: 3.5%;
+    margin-right: 10%;
+}
+
+.Third-section .col p,
+.fifth-section .col p {
+    padding: 30px 0 70px 0 ;
+}
+
+.fourth-section .col p {
+    padding-top: 30px;
+}
+
+.first-section img {
+    margin-left: 7%;
+    margin-right: 7%;
+    width: 86%;
+}
+
+.massage {
+    padding: 0;
+}
+
+footer input,
+footer h2,
+footer p,
+footer ul,
+footer svg{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer input {
+    width: 50%;
+    display: inline-block;
+}
+
+footer .footer-bigbtn {
+    margin-right: 10%;
+    float: none;
+    width: 20%;
+    margin-top: -38px;
+    
+}
+
+.sixth-section .bigBtn {
+    margin-top: 20px;
+}
+
+
+.Third-section .col img,
+.fifth-section .col img {
+    padding: 30px 0;
+    
+}
+
+footer ul li a {
+    font-size: 150%;
+}
+ 
+footer li {
+    
+    padding-right: 10px;
+}
+
+}
+
+
+@media only screen and (max-width: 800px) and (min-width: 550px){
+
+    .second-section .col h1 {
+        font-size: 240%;
+    }
+
+    header h1 {
+        
+        font-size: 130%;
+    }
+
+    footer .footer-bigbtn {
+        
+      font-size: 70%;
+    }
+
+    .Third-section .col p,
+    .fifth-section .col p {
+    padding: 20px 0 70px 0 ;
+    font-size: 80%;
+}
+
+.fourth-section .col p {
+    padding-top: 20px;
+    font-size: 70%;
+}
+
+.fourth-section h1,
+.Third-section h1,
+.fifth-section h1 {
+    font-size: 100%;
+}
+
+}
